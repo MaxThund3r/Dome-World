@@ -303,9 +303,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\gunShootBullet.cs" />
+    <Compile Include="Assets\Scripts\gunShootBullet.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
-    <Compile Include="Assets\shootLazer.cs" />
+    <Compile Include="Assets\Scripts\shootLazer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
