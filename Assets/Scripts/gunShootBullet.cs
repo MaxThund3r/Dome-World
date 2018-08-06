@@ -10,6 +10,7 @@ public class gunShootBullet : MonoBehaviour {
     public int ammoMax;
     public Text bulletCount;
     public GameObject particle;
+    public bool enabled1 = true;
 
     // Update is called once per frame
     void Start() {
@@ -32,7 +33,7 @@ public class gunShootBullet : MonoBehaviour {
     {
         while (true)
         {
-            if (Input.GetMouseButton(0) && Ammo > 0)
+            if (Input.GetMouseButton(0) && Ammo > 0 && enabled1)
             {
                 RaycastHit hit;
                 Ammo--;
@@ -44,7 +45,7 @@ public class gunShootBullet : MonoBehaviour {
                 }
                 yield return new WaitForSeconds(.3f);
             }
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) && enabled1)
             {
                 Ammo = ammoMax;
                 yield return new WaitForSeconds(.3f);
@@ -57,7 +58,7 @@ public class gunShootBullet : MonoBehaviour {
     {
         while (true)
         {
-            if (Ammo > 0)
+            if (Ammo > 0 && enabled1)
             {
                 if (Input.GetMouseButtonDown(0))
                 {

@@ -3,7 +3,10 @@ guid: 46a7988757c50da4c9161a68eb467da9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animationTest: {instanceID: 0}
+  - bulletCount: {instanceID: 0}
+  - particle: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
