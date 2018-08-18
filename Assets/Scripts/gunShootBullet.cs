@@ -11,9 +11,16 @@ public class gunShootBullet : MonoBehaviour {
     public Text bulletCount;
     public GameObject particle;
     public bool enabled1 = true;
+    public Vector3 localSpace;
 
     // Update is called once per frame
     void Start() {
+        StartCoroutine(test());
+        StartCoroutine(Shoot());
+    }
+
+    private void OnEnable()
+    {
         StartCoroutine(test());
         StartCoroutine(Shoot());
     }
